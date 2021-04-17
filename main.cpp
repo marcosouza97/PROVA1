@@ -181,7 +181,7 @@ int main(int argc, char const *argv[]){
 
   }
    
-   cout << "A palavra descrita eh: " <<endl;
+   cout << "A palavra descrita eh : " <<endl;
 
     for(int i; i<=numero1;i++){
     cout << nome[i];
