@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]){
  cin >> numero1;
 
   //Solicitando o primeiro caracter.
-  if(numero1<=50){
+  if(numero1 >0 && numero1 <= 50){
     for(int i;i<=numero1;i++){   
     cout << "digite o primeiro caracter" << endl;
     cin >> caracter1;
@@ -172,15 +172,16 @@ int main(int argc, char const *argv[]){
        }
       }
     }
-
-
     cout << "A palavra descrita eh: " <<endl;
 
     for(int i; i<=numero1;i++){
-      cout << nome[i];
-    }
+    cout << nome[i];
   }
-  cout <<"Tamanho da palavra invalida" << endl;
-    
+
+  }
+  else{
+   cout <<"Tamanho da palavra invalida" << endl;
+
+  }
   return 0;
 }
