@@ -13,93 +13,77 @@ int main(int argc, char const *argv[]){
 
   //Solicitando a quantidade de teclas a ser digitadas.
 
- cout << "Quantas teclas existe vao ser digitadas?"<<endl;
+ cout << "Qual tamanho da sua palavra?"<<endl;
  cin >> numero1;
 
   //Solicitando o primeiro caracter.
   if(numero1 >0 && numero1 <= 50){
+    
     for(int i;i<=numero1;i++){   
-    cout << "digite o primeiro caracter" << endl;
-    cin >> caracter1;
+      cout << "digite o primeiro caracter" << endl;
+      cin >> caracter1;
 
-    if(caracter1=="#"){
+      if(caracter1=="#"){
 
-      //Solicitando a tecla
-      cout << "Qual eh a decla?"<< endl;
-      cin >> numero2;
+        //Solicitando a tecla
+        cout << "Qual eh a tecla?"<< endl;
+        cin >> numero2;
 
-      //solicitando o segundo caracter.
-      cout << "Digite o segundo caracter" << endl;
-      cin  >> caracter2;
+        //solicitando o segundo caracter.
+        cout << "Digite o segundo caracter" << endl;
+        cin  >> caracter2;
 
-      if(caracter2 == "="){
+        if(caracter2 == "="){
 
-        //solicitando quantidades de vezes.
-        cout << "digite a quantas vezes o numero vai ser precionado"<< endl;
-        cin >>numero3;
-      }
-                  
-      else{
-         
-        cout << "Caracter nao encontrado" << endl;
-
-      }
-
-    }
-
-    else{
-
-      cout << "Caracter nao encontrado" << endl;
-    }
-
-    //Opções das teclas digitadas
-
-    if(numero2 == 2){
-
-      switch(numero3){
-        case 1: nome[i] = "A";
-        break;
-
-        case 2: nome[i] = "B";
-        break;
-
-        case 3: nome[i] = "C";
-        break;
-      }
-    }
-
-    if(numero2==3){
-
-      switch(numero3){
-        case 1: nome[i] = "D";
-        break;
-
-        case 2: nome[i] = "E";
-        break;
-
-        case 3: nome[i] = "F";
-        break;
-
-          }
-        }
-
-        if(numero2==4){
+          //solicitando quantidades de vezes.
+          cout << "digite a quantas vezes o numero vai ser precionado"<< endl;
+          cin >>numero3;
+          if(numero2 == 2){
 
           switch(numero3){
-           case 1: nome[i] = "G";
-           break;
+          case 1: nome[i] = "A";
+          break;
 
-           case 2: nome[i] = "H";
-           break;
+          case 2: nome[i] = "B";
+          break;
 
-           case 3: nome[i] = "I";
-           break;
-          }
+          case 3: nome[i] = "C";
+          break;
         }
+      }
+
+      if(numero2==3){
+
+        switch(numero3){
+          case 1: nome[i] = "D";
+          break;
+
+          case 2: nome[i] = "E";
+          break;
+
+          case 3: nome[i] = "F";
+          break;
+
+        }
+      }
+
+      if(numero2==4){
+
+      switch(numero3){
+        case 1: nome[i] = "G";
+        break;
+
+        case 2: nome[i] = "H";
+        break;
+
+        case 3: nome[i] = "I";
+        break;
+        }
+      }
 
       if(numero2==5){
 
-       switch(numero3){
+        switch(numero3){
           case 1: nome[i] = "J";
           break;
 
@@ -113,7 +97,7 @@ int main(int argc, char const *argv[]){
 
       if(numero2==6){
 
-       switch(numero3){
+        switch(numero3){
           case 1: nome[i] = "M";
           break;
 
@@ -172,7 +156,23 @@ int main(int argc, char const *argv[]){
           break;
        }
       }
+      }
+                  
+      else{
+         
+        cout << "Caracter nao encontrado" << endl;
+
+      }
+
     }
+
+    else{
+
+      cout << "Caracter nao encontrado" << endl;
+    }
+
+    }
+    
 
 
   }
@@ -181,9 +181,9 @@ int main(int argc, char const *argv[]){
 
   }
    
-   cout << "A palavra descrita eh : " <<endl;
+   cout << "A palavra descrita eh: " <<endl;
 
-    for(int i; i<=numero1;i++){
+    for(int i; i==numero1;i++){
     cout << nome[i];
   }
   return 0;
