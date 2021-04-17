@@ -11,14 +11,14 @@ int main(int argc, char const *argv[]){
  string caracter1, caracter2,nome[50];
     //Vetor de 50 caracter pois a questão deixa claro.
 
-    //Solicitando a quantidade de teclas a ser digitadas
+    //Solicitando a quantidade de teclas a ser digitadas.
 
  cout << "Quantas teclas existe vao ser digitadas?"<<endl;
  cin >> numero1;
 
-    //Solicitando o primeiro caracter
-
- for(int i;i<=numero1;i++){   
+    //Solicitando o primeiro caracter.
+    if(numero1<=50){
+    for(int i;i<=numero1;i++){   
     cout << "digite o primeiro caracter" << endl;
     cin >> caracter1;
 
@@ -178,6 +178,8 @@ int main(int argc, char const *argv[]){
     for(int i; i<=numero1;i++){
         cout << nome[i];
     }
+}
+  cout <<"Tamanho da palavra invalida" << endl;
     
     return 0;
 }
