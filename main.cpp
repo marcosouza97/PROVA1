@@ -79,6 +79,7 @@ int main(int argc, char const *argv[]){
 
         case 3: nome[i] = "F";
         break;
+
           }
         }
 
@@ -136,7 +137,7 @@ int main(int argc, char const *argv[]){
           case 3: nome[i] = "R";
           break;
 
-          case 4: nome[i]= "S";
+          case 4: nome[i] = "S";
           break;
         }
       }
@@ -172,16 +173,18 @@ int main(int argc, char const *argv[]){
        }
       }
     }
-    cout << "A palavra descrita eh: " <<endl;
 
-    for(int i; i<=numero1;i++){
-    cout << nome[i];
-  }
 
   }
   else{
    cout <<"Tamanho da palavra invalida" << endl;
 
+  }
+   
+   cout << "A palavra descrita eh: " <<endl;
+
+    for(int i; i<=numero1;i++){
+    cout << nome[i];
   }
   return 0;
 }
